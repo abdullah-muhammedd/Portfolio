@@ -1,0 +1,95 @@
+/* General rules */
+body {font-family: 'Ubuntu', sans-serif;
+height: 2000px;}
+ul  {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:active{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+/* End General Rules */
+/* Start Header */
+header{
+    background-color: rgba(94, 92, 92, 0.6);
+    color: white;
+    position: relative;
+}
+header nav {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(94, 92, 92, 0.6);
+    top: 0%;
+    left: 0%;
+    opacity: 0%;
+    z-index: -2;
+    visibility: hidden;
+}
+header nav ul li{
+    transition-duration: 0.2s;
+    font-size: 1rem;
+}
+header nav ul li:hover
+{
+    color: #EF3724;
+}
+.openNav {
+    animation: navMenueAnimateionOpen 0.6s linear;
+    animation-fill-mode: forwards;
+} 
+.closeNav{
+    animation: navMenueAnimateionclose 0.6s linear;
+    animation-fill-mode: forwards;
+}
+header .container h1 {
+    font-size: 2rem;
+}
+@media (max-width: 576px) {
+header .container h1 {
+        font-size: 1rem;
+    }
+}
+@keyframes navMenueAnimateionOpen {
+    0% {
+        top:0%;
+        left: 0%;
+        opacity: 0%;
+    }
+    100% {
+        top: 100%;
+        left: 0%;
+        opacity: 100%;
+    }
+}
+@keyframes navMenueAnimateionclose {
+    0% {
+    top: 100%;
+    left: 0%;
+    opacity: 100%;
+
+    }
+    100% {
+    top: 0%;
+    left: 0%;
+    opacity: 0%;
+    }
+}
+#bars:hover{
+    color: #EF3724;
+}
+#bars{
+    font-size: 1.2rem;
+}
+.activeBars{
+    color: #EF3724;
+    border:2px solid #EF3724;
+    border-radius: 50%;
+}
+/* End Header */
+

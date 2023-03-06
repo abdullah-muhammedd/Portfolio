@@ -1,0 +1,64 @@
+/* Start Landing */
+.landing{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.landing .image{
+position: relative;
+}
+.landing .image .card{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.75);
+top: 0;
+left: 0;
+}
+.landing .image .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.landing .image .info>span:nth-child(1) {
+    font-size: 1.2rem;
+}
+.landing .image .info span:nth-child(2){
+    font-size: 3rem;
+}
+.landing .image .info span span {
+    color:#EF3724;
+}
+.landing .image .info .job {
+    color: #EF3724;
+    font-size: 1.2rem;
+    background-color: #ef38246c;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+}
+
+@media (max-width: 576px) {
+.landing .image .info > span:nth-child(1) {
+        font-size: 0.5rem;
+    }
+    .landing .image .info span:nth-child(2) {
+        font-size: 1rem;
+    }
+    .landing .image .info .job {
+        font-size: 0.5rem;
+    }
+}
+.landingHiddenItem{
+    opacity: 0%;
+    filter: blur(5px);
+    transition: all 1s;
+}
+.landingShownItem{
+    transform: translateY(80%);
+    opacity: 100%; 
+    filter: none;
+}
+/* End Landing */
